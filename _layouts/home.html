@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-10 offset-md-1">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 style="font-size: 2.3rem;" class="mb-4">
+		E-Commerce Technology Blog
+        </h1>
+
+        <p>
+        </p>
+
+        <h2 class="mt-4">
+          What's New?
+        </h2>
+        
+        {% for post in site.posts limit:5 %}
+          <div class="mb-4 mt-4">
+              <h5>
+                  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              </h5>
+              
+              <div class="text-secondary small mb-4">
+                  {%
+                      include written-on.html
+                      date=post.date
+                  %}
+              </div>
+
+              <hr />
+          </div>
+        {% endfor %}
+
+        <a class="btn btn-outline-secondary mb-4 mb-md-0" href="{{ site.baseurl }}/blogs">ดู blogs ทั้งหมด</a>
+      </div>
+    </div>
+  </div>
+</div>
