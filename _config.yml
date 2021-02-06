@@ -7,6 +7,6 @@ permalink:           /:year/:month/:day/:title/
 plugins:             [jekyll-sitemap, jekyll-seo-tag]
 
 # Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		         'Fuse eCommerce'
+title:		         'Connex eCommerce'
 description:	     'An eCommerce Technology Blog'
-author:              'Fuse eCommerce'
+author:              'Connex eCommerce'
